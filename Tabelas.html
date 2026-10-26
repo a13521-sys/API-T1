@@ -12,9 +12,22 @@
             font-size: 40px;
             color: blue;
         }
-        td, th{
+
+        th {
+            background-color: lightcyan;
+        }
+
+        td,
+        th {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 25px;
+            border: solid green 3px;
+            width: 150px;
+        }
+
+        table {
+            border: solid green 3px;
+            border-collapse: collapse;
         }
     </style>
 
@@ -23,16 +36,36 @@
 <body>
     <h1>Inserção e formatação de tabelas</h1>
     <table align="center">
+        <!--Legenda da tabela alinhada em baixo da tabela-->
+        <caption align="bottom">Tabela API 11ºD - T1</caption>
+        <!--Inserir linha - tr -->
         <tr>
-            <td></td>
+            <!--Insere coluna de cabeçalho e une 5 colunas-->
+            <th colspan="5">Despesas anuais</th>
+        <tr>
+            <th colspan="2"></th>
+
             <th>1º Trimestre</th>
             <th>2º Trimestre</th>
             <th>3º Trimestre</th>
-            <tr>
-                <td>Agua</td>
-                <td>100€</td>
-                <td>80€</td>
-                <td>150€</td>
+        <tr>
+            <!--Insere célula e une 3 linhas-->
+            <th rowspan="3">Tipo de despesa</th>
+            <td>Água</td>
+            <td>100€</td>
+            <td>80€</td>
+            <td>150€</td>
+        <tr>
+            <td>Energia</td>
+            <td>200€</td>
+            <td>150€</td>
+            <td>300€</td>
+        <tr>
+            <td>Comunicações</td>
+            <td>40€</td>
+            <td>42€</td>
+            <td>45€</td>
+
     </table>
 </body>
 
