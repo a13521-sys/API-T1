@@ -13,13 +13,18 @@
         th, td{font-family: verdana;
             font-size: 24px;
             border: solid red 1px;
+            text-align: center;
+            vertical-align: middle;
+            height: 50px;
         }
+
         caption{text-align: center;}
 
         body{background-color: #F0F5FA;}
 
         table{border: solid red 3px;
-        border-collapse: collapse;}
+        border-collapse: collapse;
+        width: 90%;}
 
         th{background-color: rosybrown;}
 
@@ -27,5 +32,43 @@
 </head>
 <body>
     <h1>Clube de Informática</h1>
+    <table align="center">
+        <tr>
+            <th>Hora</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+
+            <tr>
+                <td>14h - 15h</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>Python</td>
+                <td>Redes</td>
+
+                <tr>
+                    <td>15h - 16h</td>
+                    <td colspan="2" style="background-color: lightskyblue;">Projeto Wed</td>
+                    <td>Python</td>
+                    <td>Redes</td>
+
+                    <tr>
+                        <td>16h - 17h</td>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td rowspan="2" style="background-color: aquamarine;">Robótica</td>
+                        <td>Redes</td>
+
+                        <tr>
+                            <td>17h - 18h</td>
+                            <td>JavaScript</td>
+                            <td>CSS</td>
+                            <td>Redes</td>
+
+                            <tr>
+                                <th colspan="5" style="background-color: rgb(241, 241, 116);">Inscrições abertas - Participa!</th>
+
+    </table>
 </body>
 </html>
